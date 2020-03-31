@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <script src="./js/bundle.js"></script>
+</head>
+<body>
+    <h1>Countries</h1>
+    <div id="app">
+   <h2>{{ totalPopulation }}</h2>
+   <button v-on:click="fetchCountries">Fetch Total Population</button>
+
+   <div id="filteredCountries">
+    <h3>Enter Country to filter by:</h3>
+    <input type="text" v-model.string="filterCountry"/>
+  </div>
+
+    </div>
+    
+</body>
+</html>
